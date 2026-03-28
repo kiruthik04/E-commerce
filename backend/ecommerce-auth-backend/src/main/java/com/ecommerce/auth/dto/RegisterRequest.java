@@ -21,6 +21,7 @@ public class RegisterRequest {
     @Size(min = 6, max = 40)
     private String password;
 
+    // Optional phone field
     private String phone;
     
     private RoleEnum role;

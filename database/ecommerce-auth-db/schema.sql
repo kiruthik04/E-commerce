@@ -20,3 +20,6 @@ INSERT IGNORE INTO roles (name) VALUES
 -- ('Admin', 'admin@ecommerce.com', '$2a$10$wN1Q/y10wY/2U3HkZJ9O7eq1K1gTjYpW1R2M3Iq2T3wL3mXv0Z3vW', '1234567890', 3, true, NOW());
 
 -- (For simplicity, roles are enough. Users can be created via register API).
+
+ALTER TABLE users ADD COLUMN IF NOT EXISTS phone VARCHAR(15) NULL;
+ALTER TABLE users ADD COLUMN IF NOT EXISTS is_verified BOOLEAN DEFAULT FALSE;

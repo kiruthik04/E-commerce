@@ -51,6 +51,7 @@ export default function ProfileEditForm({ onCancel }) {
           />
         </div>
         
+        {/* Phone field to view and update */}
         <div>
           <label className="block text-sm font-medium text-gray-700" htmlFor="phone">
             Phone Number

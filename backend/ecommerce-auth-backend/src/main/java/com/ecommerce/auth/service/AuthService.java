@@ -56,6 +56,7 @@ public class AuthService {
                 .name(request.getName())
                 .email(request.getEmail())
                 .passwordHash(passwordEncoder.encode(request.getPassword()))
+                // Map the phone field
                 .phone(request.getPhone())
                 .role(role)
                 .isVerified(true)

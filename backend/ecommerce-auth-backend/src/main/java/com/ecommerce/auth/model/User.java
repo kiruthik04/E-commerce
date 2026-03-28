@@ -27,15 +27,15 @@ public class User {
     @Column(nullable = false)
     private String passwordHash;
 
-    @Column(length = 20)
+    @Column(name = "phone")
     private String phone;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
 
-    @Column(nullable = false)
-    private boolean isVerified = false;
+    @Column(name = "is_verified")
+    private Boolean isVerified = false;
 
     @CreationTimestamp
     @Column(updatable = false)

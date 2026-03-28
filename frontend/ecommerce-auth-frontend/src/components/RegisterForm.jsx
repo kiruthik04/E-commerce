@@ -95,6 +95,7 @@ export default function RegisterForm() {
             />
           </div>
           <div>
+             {/* Optional phone field */}
              <label className="block text-sm font-medium text-gray-700" htmlFor="phone">
                Phone Number
              </label>

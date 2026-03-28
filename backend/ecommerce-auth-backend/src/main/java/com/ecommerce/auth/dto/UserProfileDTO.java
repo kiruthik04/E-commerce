@@ -17,6 +17,6 @@ public class UserProfileDTO {
     private String email;
     private String phone;
     private String role;
-    private boolean isVerified;
+    private Boolean isVerified;
     private LocalDateTime createdAt;
 }
